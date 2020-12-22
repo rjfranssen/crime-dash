@@ -71,7 +71,20 @@ gnpop = gather(npop, Year,Pop, -State)
 # UI Function
 #############################################################
 ui <- dashboardPage(skin = "black",
-  dashboardHeader(title = "FBI Crime Data"),
+  dashboardHeader(title = "FBI Crime Data",
+                  dropdownMenu(
+                    type = "notifications", 
+                    icon = icon("question-circle"),
+                    badgeStatus = NULL,
+                    headerText = "More links:",
+                    notificationItem("git repo", icon = icon("github"),
+                                    href = "https://github.com/rjfranssen/crime-dash"),
+                    notificationItem("shiny", icon = icon("r-project"),
+                                     href = "http://shiny.rstudio.com/"),
+                    notificationItem("shinydashboard", icon = icon("r-project"),
+                                     href = "https://rstudio.github.io/shinydashboard/")
+                    )
+                  ),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Crimes Dash 1", tabName = "crimes-dash-1", icon=icon("dashboard")),

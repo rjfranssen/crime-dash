@@ -5,8 +5,8 @@ account: rjfranssen
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3375973
-bundleId: 3963596
+bundleId: 4018903
 url: https://rjfranssen.shinyapps.io/crime-dash/
-when: 1607484714.9384
+when: 1608645520.15562
 asMultiple: FALSE
 asStatic: FALSE
